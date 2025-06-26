@@ -7,7 +7,7 @@ interface StatsCardProps {
   value: string | number
   change?: string
   changeType?: 'positive' | 'negative' | 'neutral'
-  icon: LucideIcon
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>> // <-- FIXED HERE
   color: 'blue' | 'green' | 'purple' | 'orange'
 }
 
